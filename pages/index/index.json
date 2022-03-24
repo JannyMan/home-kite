@@ -1,0 +1,22 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 50,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-image": "@vant/weapp/image/index",
+    "custom-nav-bar": "/components/custom-nav-bar/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-overlay": "@vant/weapp/overlay/index"
+  }
+}

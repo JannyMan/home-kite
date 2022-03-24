@@ -1,0 +1,11 @@
+<!--pages/wifi/index.wxml-->
+<view class="page">
+  <!-- 一键连接WIFI -->
+  <view style="text-align: left;" wx:if="{{localtion && localtion.formatted_addresses}}">{{localtion.formatted_addresses.recommend}}</view>
+  <view style="text-align: left;">地址：{{nowAddress.name}}</view>
+  <view style="text-align: left;">WIFI名称：{{nowAddress.wifiName}}</view>
+  <!-- <view>{{nowAddress.password}}</view> -->
+  <image src="/images/wifi/wifi.jpg"></image>
+  <button type="primary" catchtap="startWifi">连接WIFI</button>
+  <button type="primary" catchtap="setClipboardData" style="margin-top: 30rpx;">复制WIFI密码</button>
+</view>

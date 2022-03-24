@@ -1,0 +1,83 @@
+<!--pages/index/index/index.wxml-->
+<!-- 新版首页 -->
+  <scroll-view refresher-enabled="{{true}}"  refresher-triggered="{{isRefresher}}"  bindrefresherrefresh="refresh" lower-threshold="{{200}}" show-scrollbar="{{false}}" scroll-y="{{canScroll}}" style="background: #F8F8F8;position: fixed;left: 0; top: 0; bottom: 0; right: 0;overflow: auto;">
+  <swiper indicator-dots="{{indicatorDots}}" circular="{{true}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 396rpx;">
+  <block wx:for="{{1}}" wx:key="item">
+    <swiper-item>
+      <view class="swiper-item">
+        <!-- src="{{item.image}}" -->
+        <van-image
+        catchtap="goPage"
+        width="100%"
+        height="396rpx"
+        data-item="{{item}}"
+        src="cloud://cloud1-5gj0ixgo33b138e2.636c-cloud1-5gj0ixgo33b138e2-1309654238/banner_sy@2x.png" />
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<view wx:if="{{userInfo.length > 0 }}" class="carInfo">
+  <view class="car">
+    <swiper indicator-dots="{{false}}" current="{{currentIndex}}" circular="{{true}}" bindchange="carChange" autoplay="{{false}}" interval="{{3000}}" duration="{{500}}">
+        <block wx:for="{{userInfo}}" wx:key="item">
+          <swiper-item>
+            <view class="info" catchtap="goCarDetail" data-item="{{item}}">
+              <image class="ic_wxz" wx:if="{{item.needRepair == 10}}" src="/images/ic_wxz@2x.png"  data-item="{{item}}"  catchtap="goRepairDetail"></image>
+              <view class="left">
+                <image src="{{item.avatarUrl}}"></image>
+              </view>
+              <view class="center">
+                <view class="carNum"><view>{{item.name}}</view>
+                <!-- <label-authenticated style="margin-left: 10rpx;" value="{{item}}" page="/pages/index/index/index" tabar="homePage" type="authenticated"></label-authenticated>
+                <label-authenticated style="position: relative; top: -6rpx;margin-left: 6rpx;" wx:if="{{item.vehicleSource == 10}}" type="vip"></label-authenticated>
+                <image wx:if="{{item.role == 30 && item.authenticated == 1}}" src="/images/label_czrz@2x.png" style="width: 88rpx; height: 41rpx; position: relative;left: 6rpx;top: -6rpx;"></image> -->
+              </view>
+                <view class="model van-ellipsis">{{item.profession}}</view>
+              </view>
+              <view class="right" catchtap="addCar">
+                <image src="/images/index/home_icon_add@2x.png"></image>
+              </view>
+            </view>
+            <view class="integral">
+              <view class="integralInfo">
+                <van-row>
+                  <view class="van-col" style="width:244rpx"><navigator url="/integral/pages/index/index" hover-class="navigator-hover"><view class="integralTitle">前端基础</view><view class="integralNum"><text class="num"></text></view></navigator></view>
+                  <view class="van-col" style="width:206rpx"><navigator url="/order/pages/myPackage/index/index?myAutoID={{currentCarInfo.myAutoID}}" hover-class="navigator-hover"><view class="integralTitle">前端框架</view><view class="integralNum"><text class="num"></text></view></navigator></view>
+                  <view class="van-col" style="width:236rpx"><view class="integralTitle">小程序</view><view class="integralNum"><text class="num"></text></view></view>
+                  <!-- <view class="van-col" style="width:198rpx"><view class="integralTitle">下次保养剩余</view><view class="integralNum"><text class="num">{{Maintenance}}</text><text class="integralLab">{{Maintenance == '-' ? '' : '天'}}</text></view></view> -->
+                </van-row>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view> 
+</view>
+
+<!-- <view class="title" id="shopList"> -->
+<view class="articleTitle">
+  <view>
+    <view class="left">文章精选</view>
+    <view class="right" catchtap="seeMore">
+      <!-- <view style="float: left;color: #999;">更多</view> -->
+      <image style="width:20rpx;height:28rpx;vertical-align: middle;float: left;" src="/images/setting/ic_enter@2x.png"></image>
+    </view>
+  </view>
+</view>
+<view class="articleList">
+  <view class="item articleItem" catchtap="express">
+    <view class="articleItemImg">
+      <image src="{{item.thumb}}" class="articleHot" wx:if="{{item.is_stick == 20}}"></image>
+      <image src="cloud://cloud1-5gj0ixgo33b138e2.636c-cloud1-5gj0ixgo33b138e2-1309654238/banner_sy@2x.png" class="articleLogo"></image>
+    </view>
+   
+    <view class="article">
+      <view class="activeTitle">文章标题</view>
+      <view class="time">
+        <view class="createTime">2020.01.02</view>
+        <view class="endTime">这是一篇非诚不错的文章，值得一读；</view>
+      </view>
+    </view>
+  </view>
+</view>
+</scroll-view> 

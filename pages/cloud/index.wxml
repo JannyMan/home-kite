@@ -1,0 +1,21 @@
+<!--pages/index/index.wxml-->
+<!-- <swiper autoplay="{{true}}">
+  <swiper-item>
+    <image src="/images/banner.png" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/banner.png" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/banner.png" mode="widthFix"></image>
+  </swiper-item>
+</swiper> -->
+
+<button catchtap="addData" type="primary" style="margin-top: 30rpx;">添加数据</button>
+<button catchtap="searchData" type="primary" style="margin-top: 30rpx;">查询数据</button>
+<button catchtap="delData" type="warn" style="margin-top: 30rpx;">修改数据</button>
+<button catchtap="cloudFun" type="warn" style="margin-top: 30rpx;">云函数</button>
+<button catchtap="getData" type="warn" style="margin-top: 30rpx;">云函数查询</button>
+<button catchtap="upLoad" type="warn" style="margin-top: 30rpx;">上传图片</button>
+<image src="{{fileID}}"></image>
+

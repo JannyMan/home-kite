@@ -1,0 +1,8 @@
+<!--pages/menu/index.wxml-->
+<view catchtap="blueTooth">蓝牙</view>
+<view catchtap="addPhoneCalendar">日历</view>
+<view catchtap="chooseContact">选择联系人</view>
+<view catchtap="addPhoneContact">添加联系人</view>
+<view catchtap="scanCode">扫码</view>
+<view catchtap="vibrateShort">震动</view>
+<view catchtap="connectWifi">连接WIFI</view>
