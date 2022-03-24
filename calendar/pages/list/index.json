@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "每日待办事项",
   "usingComponents": {
-    "footer": "./../../../components/footer/index",
+    "footer": "./../../components/footer/index",
     "mp-badge": "/miniprogram_npm/weui-miniprogram/badge/badge",
     "mp-slideview": "/miniprogram_npm/weui-miniprogram/slideview/slideview"
   }
