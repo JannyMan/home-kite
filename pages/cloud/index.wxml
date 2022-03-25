@@ -16,6 +16,8 @@
 <button catchtap="delData" type="warn" style="margin-top: 30rpx;">修改数据</button>
 <button catchtap="cloudFun" type="warn" style="margin-top: 30rpx;">云函数</button>
 <button catchtap="getData" type="warn" style="margin-top: 30rpx;">云函数查询</button>
+<button catchtap="getShop" type="warn" style="margin-top: 30rpx;">小商店</button>
+<button catchtap="getCalendar" type="warn" style="margin-top: 30rpx;">我的备忘录</button>
 <button catchtap="upLoad" type="warn" style="margin-top: 30rpx;">上传图片</button>
 <image src="{{fileID}}"></image>
 

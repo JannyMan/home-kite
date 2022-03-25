@@ -46,6 +46,13 @@
           "name": "",
           "pathName": "calendar/pages/list/index",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "备忘录",
+          "pathName": "calendar/pages/list/index",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

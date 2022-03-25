@@ -30,7 +30,7 @@
       "selectedColor": "#D90C18",
       "list": [
         {"pagePath": "pages/index/index", "text": "首页", "iconPath": "/images/tab/tab_home@2x.png", "selectedIconPath": "/images/tab/tab_home_sel@2x.png"},
-        {"pagePath": "pages/menu/index", "text": "我的", "iconPath": "/images/tab/tab_my@2x.png", "selectedIconPath": "/images/tab/tab_my_sel@2x.png"}
+        {"pagePath": "pages/cloud/index", "text": "我的", "iconPath": "/images/tab/tab_my@2x.png", "selectedIconPath": "/images/tab/tab_my_sel@2x.png"}
       ]
     },
     "sitemapLocation": "sitemap.json",

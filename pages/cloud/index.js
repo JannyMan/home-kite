@@ -41,6 +41,13 @@ Page({
     })
   },
 
+  // 备忘录
+  getCalendar(){
+    wx.navigateTo({
+      url: '/calendar/pages/list/index'
+    })
+  },
+
   searchData(){
     console.log('查询数据')
     // todoDb.doc('5b049cc8621985400e5179723bec8adc').get().then(res => {
