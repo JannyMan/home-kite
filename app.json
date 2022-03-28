@@ -17,6 +17,18 @@
           "pages/edit/index",
           "pages/detail/index"
         ]
+      },
+      {
+        "root": "setupPage",
+        "pages": [
+          "pages/links/index"
+        ]
+      },
+      {
+        "root": "wxRunData",
+        "pages": [
+          "pages/listImg/index"
+        ]
       }
     ],
     "window": {
@@ -34,7 +46,7 @@
       ]
     },
     "sitemapLocation": "sitemap.json",
-    "lazyCodeLoading": "requiredComponents",
+    
     "permission": {
         "scope.userLocation": {
           "desc": "根据位置信息连接WIFI"

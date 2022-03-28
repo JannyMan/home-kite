@@ -1,0 +1,27 @@
+/* setupPage/pages/links/index.wxss */
+.page{
+  width: 100;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+.form{
+  padding: 30rpx;
+  margin: 30rpx;
+  background: #fff;
+}
+
+.item{
+  min-height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.item input{
+  height: 100%;
+  line-height: 100rpx;
+}
+.config{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

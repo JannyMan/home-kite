@@ -18,7 +18,7 @@
 } */
 
 /* 引入 weui 组件 */
-@import './miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+/* @import './miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss'; */
 
 page {
   --footer-height: 10vh;
@@ -41,6 +41,7 @@ page {
   box-sizing: border-box;
   min-height: 100vh;
   overflow-x: hidden;
+  padding-bottom: 150rpx;
 }
 
 button {

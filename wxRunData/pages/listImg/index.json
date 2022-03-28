@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "微信运动",
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

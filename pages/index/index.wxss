@@ -318,3 +318,18 @@ swiper{
   flex-shrink: 0;
   overflow: hidden;
 }
+
+.box{
+  width: 690rpx;
+  height: 188rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.box > image{
+  width: 205rpx;
+  height: 136rpx;
+  border-radius: 12rpx;
+}

@@ -53,6 +53,27 @@
           "name": "备忘录",
           "pathName": "calendar/pages/list/index",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/cloud/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "setupPage/pages/links/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "微信运动",
+          "pathName": "wxRunData/pages/listImg/index",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

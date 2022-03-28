@@ -41,10 +41,49 @@ Page({
     })
   },
 
+  // 获取微信运动数据
+  getRunData(){
+    wx.navigateTo({
+      url: '/wxRunData/pages/listImg/index'
+    })
+    return
+    let that = this
+    wx.login({
+      success(){
+        console.log()
+        wx.getWeRunData({
+          success: (resRun) => {
+            console.log(resRun)
+            wx.cloud.callFunction({
+              name: 'weRun',
+              data: {
+                weRunData: wx.cloud.CloudID(resRun.cloudID),
+                obj: {
+                  shareInfo: wx.cloud.CloudID(resRun.cloudID)
+                }
+              },
+              success: (res) => {
+                console.log(res)
+                let step = res.result.event.weRunData.data.stepInfoList[30].step
+                console.log(step)
+              }
+            })
+          },
+        })
+      }
+    })
+  },
+
   // 备忘录
   getCalendar(){
     wx.navigateTo({
       url: '/calendar/pages/list/index'
+    })
+  },
+
+  addPageSet(){
+    wx.navigateTo({
+      url: '/setUp/pages/router/index'
     })
   },
 

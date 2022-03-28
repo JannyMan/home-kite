@@ -1,0 +1,36 @@
+/* wxRunData/pages/listImg/index.wxss */
+.page{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.canvasPage{
+  padding: 0 60rpx;
+  width: 630rpx;
+  height: calc(100% - 207rpx);
+}
+#mychart-dom-bar{
+  width: 600rpx;
+}
+.steps{
+  text-align: center;
+  color: #666;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+}
+.btn{
+  text-align: center;
+  padding: 0 30rpx;
+}

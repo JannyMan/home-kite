@@ -16,7 +16,7 @@
     </swiper-item>
   </block>
 </swiper>
-<view wx:if="{{userInfo.length > 0 }}" class="carInfo">
+<view wx:if="{{userInfo.length > 0  && false}}" class="carInfo">
   <view class="car">
     <swiper indicator-dots="{{false}}" current="{{currentIndex}}" circular="{{true}}" bindchange="carChange" autoplay="{{false}}" interval="{{3000}}" duration="{{500}}">
         <block wx:for="{{userInfo}}" wx:key="item">
@@ -57,27 +57,14 @@
 <!-- <view class="title" id="shopList"> -->
 <view class="articleTitle">
   <view>
-    <view class="left">文章精选</view>
+    <view class="left">精选活动</view>
     <view class="right" catchtap="seeMore">
       <!-- <view style="float: left;color: #999;">更多</view> -->
       <image style="width:20rpx;height:28rpx;vertical-align: middle;float: left;" src="/images/setting/ic_enter@2x.png"></image>
     </view>
   </view>
 </view>
-<view class="articleList">
-  <view class="item articleItem" catchtap="express">
-    <view class="articleItemImg">
-      <image src="{{item.thumb}}" class="articleHot" wx:if="{{item.is_stick == 20}}"></image>
-      <image src="cloud://cloud1-5gj0ixgo33b138e2.636c-cloud1-5gj0ixgo33b138e2-1309654238/banner_sy@2x.png" class="articleLogo"></image>
-    </view>
-   
-    <view class="article">
-      <view class="activeTitle">文章标题</view>
-      <view class="time">
-        <view class="createTime">2020.01.02</view>
-        <view class="endTime">这是一篇非诚不错的文章，值得一读；</view>
-      </view>
-    </view>
-  </view>
+<view class="box">
+<image></image>
 </view>
 </scroll-view> 
